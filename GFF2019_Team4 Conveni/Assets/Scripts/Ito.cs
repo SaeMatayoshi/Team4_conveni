@@ -5,8 +5,10 @@ using UnityEngine.EventSystems;
 
 public class Ito : MonoBehaviour
 {
+    // 仲間のCollider内にいるかどうか
     bool Isarea = false;   
     public TouchInput touchInput;
+    // 仲間の残り人数
     public Count count;
 
     public GameObject kumo;
@@ -24,11 +26,12 @@ public class Ito : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(count.Iscount);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // ３人目を助けようとしたときの蜘蛛出現の処理
         if (count.Iscount == true)
         {
             Instantiate(
@@ -37,11 +40,11 @@ public class Ito : MonoBehaviour
                 Quaternion.identity
                 );
 
-            //Debug.Log("蜘蛛出現！");
             count.Iscount = false;
         }        
     }
 
+    // 主人公が仲間のColliderにいる間
     private void OnTriggerStay2D(Collider2D collision)
     {
         Isarea = true;
@@ -64,9 +67,7 @@ public class Ito : MonoBehaviour
                             hitObject.collider.gameObject.SetActive(false);                                                        
                             
                         }
-                        
                     }
-                    
                     Isarea = false;
                 }                
             };
