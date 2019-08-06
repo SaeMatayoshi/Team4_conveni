@@ -11,8 +11,7 @@ Unityデータ
 Android
 
 ## 担当プログラムファイル
-仲間の救出  
-3人目を救出しようとすると、蜘蛛が現れる
+[仲間の救出、3人目を救出しようとすると、蜘蛛が現れる](https://github.com/SaeMatayoshi/Team4_conveni/blob/master/GFF2019_Team4%20Conveni/Assets/Scripts/Ito.cs)
 
 ## ゲームストーリー
 怪奇事件が多発している噂の森に興味本位でキャンプをしにきたオカルト同好会。  
